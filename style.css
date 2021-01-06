@@ -11,19 +11,19 @@ body {
 }
 
 .main-container {
-  max-width: 16rem;
+  max-width: 60rem;
   margin: 2rem auto;
 }
-
+/* .profile-container start */
 .profile-container {
   max-width: 21.75rem;
   margin: 0.5rem auto;
 }
-
+/* .profile-content start */
 .profile-content {
   max-width: 13.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 0.5rem auto 1.5rem;
 }
 
 .profile-pic img {
@@ -49,3 +49,31 @@ p.country {
   margin-top: 0.5rem;
   color: rgba(169, 169, 169, 1);
 }
+/*.profile-content end  */
+
+/* profile-stats :start */
+
+.profile-stats {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+p.number {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.21;
+  color: rgba(78, 81, 80, 1);
+}
+p.tag {
+  color: rgba(189, 189, 189, 1);
+}
+.stats {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #e5e5e5;
+  margin: 0 0.75rem;
+  border-radius: 24px;
+}
+/* .profile-stats :end */
