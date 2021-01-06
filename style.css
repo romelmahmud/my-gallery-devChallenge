@@ -9,3 +9,25 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.main-container {
+  max-width: 16rem;
+  margin: 2rem auto;
+}
+
+.profile-container {
+  max-width: 21.75rem;
+  margin: auto;
+}
+
+.profile-content {
+  max-width: 13.5rem;
+  text-align: center;
+}
+
+.profile-pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 2rem auto;
+}
