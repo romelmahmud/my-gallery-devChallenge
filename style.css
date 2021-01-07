@@ -186,6 +186,10 @@ footer {
     margin: 0 0.75rem;
     border-radius: 18px;
   }
+  footer {
+    margin: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 @media (max-width: 752px) {
@@ -231,6 +235,10 @@ footer {
   p.tag {
     font-size: 0.75rem;
   }
+  footer {
+    margin: 2.25rem;
+    margin-bottom: 0.67rem;
+  }
 }
 
 @media (max-width: 465px) {
@@ -244,5 +252,9 @@ footer {
     max-width: 50%;
     height: auto;
     margin: 0.5rem auto;
+  }
+  footer {
+    margin: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
