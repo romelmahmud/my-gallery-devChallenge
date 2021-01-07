@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-  max-width: 60rem;
+  max-width: 70%;
   margin: 2rem auto;
 }
 /* .profile-container start */
@@ -29,7 +29,7 @@ body {
 .profile-pic img {
   max-width: 100%;
   height: auto;
-  border-radius: 16px;
+  border-radius: 1rem;
   margin: 1.5rem auto;
 }
 
@@ -77,3 +77,61 @@ p.tag {
   border-radius: 24px;
 }
 /* .profile-stats :end */
+
+/* gallery :start */
+
+.gallery {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "pic-1 pic-2 pic-2"
+    "pic-3 pic-3 pic-4"
+    "pic-6 pic-5 pic-4";
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem;
+}
+
+img.grid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.pic-1 {
+  grid-area: pic-1;
+}
+.pic-2 {
+  grid-area: pic-2;
+}
+.pic-3 {
+  grid-area: pic-3;
+}
+.pic-4 {
+  grid-area: pic-4;
+}
+.pic-5 {
+  grid-area: pic-5;
+}
+.pic-6 {
+  grid-area: pic-6;
+}
+
+.pic-4 .grid {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+/* .gallery :end */
+/* footer */
+footer {
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  color: rgba(169, 169, 169, 1);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
