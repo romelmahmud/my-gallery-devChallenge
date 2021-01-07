@@ -13,6 +13,7 @@ body {
 .main-container {
   max-width: 66.67%;
   margin: 2rem auto;
+  height: auto;
 }
 /* .profile-container start */
 .profile-container {
@@ -142,10 +143,10 @@ footer {
     max-width: 75%;
   }
 
-  /* .profile-content start */
-  /* .profile-content {
-    max-width: 80%;
-  } */
+  .profile-content img {
+    max-width: 90%;
+    height: auto;
+  }
   p.name {
     font-size: 1.2rem;
   }
@@ -167,6 +168,10 @@ footer {
   .main-container {
     max-width: 85%;
   }
+  .profile-content img {
+    max-width: 85%;
+    height: auto;
+  }
   p.name {
     font-size: 1rem;
   }
@@ -186,6 +191,9 @@ footer {
 @media (max-width: 752px) {
   .main-container {
     max-width: 95%;
+  }
+  .profile-content img {
+    margin: 0.8rem auto;
   }
 
   .gallery {
@@ -235,5 +243,6 @@ footer {
   .profile-content img {
     max-width: 50%;
     height: auto;
+    margin: 0.5rem auto;
   }
 }
