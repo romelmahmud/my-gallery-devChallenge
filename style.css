@@ -11,17 +11,17 @@ body {
 }
 
 .main-container {
-  max-width: 70%;
+  max-width: 66.67%;
   margin: 2rem auto;
 }
 /* .profile-container start */
 .profile-container {
-  max-width: 21.75rem;
+  max-width: 36.25%;
   margin: 0.5rem auto;
 }
 /* .profile-content start */
 .profile-content {
-  max-width: 13.5rem;
+  max-width: 62%;
   text-align: center;
   margin: 0.5rem auto 1.5rem;
 }
@@ -89,8 +89,8 @@ p.tag {
     "pic-1 pic-2 pic-2"
     "pic-3 pic-3 pic-4"
     "pic-6 pic-5 pic-4";
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1em;
 }
 
 img.grid {
@@ -134,4 +134,106 @@ footer {
   color: rgba(169, 169, 169, 1);
   font-size: 0.875rem;
   font-weight: 600;
+}
+/* media queries */
+/* below 1240px */
+@media (max-width: 1240px) {
+  .main-container {
+    max-width: 75%;
+  }
+
+  /* .profile-content start */
+  /* .profile-content {
+    max-width: 80%;
+  } */
+  p.name {
+    font-size: 1.2rem;
+  }
+
+  p.country {
+    font-size: 0.75rem;
+  }
+  .gallery {
+    row-gap: 0.75em;
+    column-gap: 1em;
+  }
+  p.number {
+    font-size: 1rem;
+  }
+}
+
+/* below 942px */
+@media (max-width: 942px) {
+  .main-container {
+    max-width: 85%;
+  }
+  p.name {
+    font-size: 1rem;
+  }
+
+  p.country {
+    font-size: 0.625rem;
+  }
+  .stats {
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+    background-color: #e5e5e5;
+    margin: 0 0.75rem;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 752px) {
+  .main-container {
+    max-width: 95%;
+  }
+
+  .gallery {
+    row-gap: 0.5rem;
+    column-gap: 0.75rem;
+  }
+  .pic-4 .grid {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  .profile-stats {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .stats {
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+    background-color: #e5e5e5;
+    margin: 0 0.75rem;
+    border-radius: 12px;
+  }
+
+  p.name {
+    font-size: 0.8rem;
+  }
+  p.country {
+    font-size: 0.625rem;
+  }
+  p.number,
+  p.tag {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .profile-container {
+    max-width: 100%;
+  }
+  .profile-content {
+    max-width: 50%;
+  }
+  .profile-content img {
+    max-width: 50%;
+    height: auto;
+  }
 }
